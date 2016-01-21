@@ -1,0 +1,36 @@
+{
+  "name": "austin881/MWSMerchantFulfillmentPHPClientLibrary",
+  "description": "A repository for Amazon's Marketplace Web Service (Amazon MWS) MerchantFulfillment PHP Client Library because Amazon does not host their crap on GitHub like the rest of the world.",
+  "keywords": [
+    "Amazon",
+    "Client",
+    "ClientLibrary",
+    "Fulfillment",
+    "Library",
+    "Marketplace",
+    "MerchantFulfillment",
+    "Merchant",
+    "MWS",
+    "Service",
+    "WebService"
+  ],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Austin Maddox",
+      "email": "austin@maddoxbox.com",
+      "homepage": "http://www.maddoxbox.com",
+      "role": "Project host"
+    }
+  ],
+  "require": {
+    "php": ">=5.2.8"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
+}
