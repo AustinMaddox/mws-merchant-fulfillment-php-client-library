@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2015 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2016 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  MWS Merchant Fulfillment Service
  * @version  2015-06-01
- * Library Version: 2015-06-01
- * Generated: Thu Oct 01 12:20:23 PDT 2015
+ * Library Version: 2016-03-30
+ * Generated: Fri Nov 11 06:01:18 PST 2016
  */
 
 /**
@@ -37,7 +37,9 @@ require_once (dirname(__FILE__) . '/../Model.php');
  * <li>PackageDimensions: MWSMerchantFulfillmentService_Model_PackageDimensions</li>
  * <li>Weight: MWSMerchantFulfillmentService_Model_Weight</li>
  * <li>MustArriveByDate: string</li>
+ * <li>ShipDate: string</li>
  * <li>ShippingServiceOptions: MWSMerchantFulfillmentService_Model_ShippingServiceOptions</li>
+ * <li>LabelCustomization: MWSMerchantFulfillmentService_Model_LabelCustomization</li>
  *
  * </ul>
  */
@@ -54,7 +56,9 @@ require_once (dirname(__FILE__) . '/../Model.php');
     'PackageDimensions' => array('FieldValue' => null, 'FieldType' => 'MWSMerchantFulfillmentService_Model_PackageDimensions'),
     'Weight' => array('FieldValue' => null, 'FieldType' => 'MWSMerchantFulfillmentService_Model_Weight'),
     'MustArriveByDate' => array('FieldValue' => null, 'FieldType' => 'string'),
+    'ShipDate' => array('FieldValue' => null, 'FieldType' => 'string'),
     'ShippingServiceOptions' => array('FieldValue' => null, 'FieldType' => 'MWSMerchantFulfillmentService_Model_ShippingServiceOptions'),
+    'LabelCustomization' => array('FieldValue' => null, 'FieldType' => 'MWSMerchantFulfillmentService_Model_LabelCustomization'),
     );
     parent::__construct($data);
     }
@@ -400,6 +404,52 @@ require_once (dirname(__FILE__) . '/../Model.php');
     }
 
     /**
+     * Get the value of the ShipDate property.
+     *
+     * @return XMLGregorianCalendar ShipDate.
+     */
+    public function getShipDate()
+    {
+        return $this->_fields['ShipDate']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the ShipDate property.
+     *
+     * @param string shipDate
+     * @return this instance
+     */
+    public function setShipDate($value)
+    {
+        $this->_fields['ShipDate']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Check to see if ShipDate is set.
+     *
+     * @return true if ShipDate is set.
+     */
+    public function isSetShipDate()
+    {
+                return !is_null($this->_fields['ShipDate']['FieldValue']);
+            }
+
+    /**
+     * Set the value of ShipDate, return this.
+     *
+     * @param shipDate
+     *             The new value to set.
+     *
+     * @return This instance.
+     */
+    public function withShipDate($value)
+    {
+        $this->setShipDate($value);
+        return $this;
+    }
+
+    /**
      * Get the value of the ShippingServiceOptions property.
      *
      * @return ShippingServiceOptions ShippingServiceOptions.
@@ -442,6 +492,52 @@ require_once (dirname(__FILE__) . '/../Model.php');
     public function withShippingServiceOptions($value)
     {
         $this->setShippingServiceOptions($value);
+        return $this;
+    }
+
+    /**
+     * Get the value of the LabelCustomization property.
+     *
+     * @return LabelCustomization LabelCustomization.
+     */
+    public function getLabelCustomization()
+    {
+        return $this->_fields['LabelCustomization']['FieldValue'];
+    }
+
+    /**
+     * Set the value of the LabelCustomization property.
+     *
+     * @param MWSMerchantFulfillmentService_Model_LabelCustomization labelCustomization
+     * @return this instance
+     */
+    public function setLabelCustomization($value)
+    {
+        $this->_fields['LabelCustomization']['FieldValue'] = $value;
+        return $this;
+    }
+
+    /**
+     * Check to see if LabelCustomization is set.
+     *
+     * @return true if LabelCustomization is set.
+     */
+    public function isSetLabelCustomization()
+    {
+                return !is_null($this->_fields['LabelCustomization']['FieldValue']);
+            }
+
+    /**
+     * Set the value of LabelCustomization, return this.
+     *
+     * @param labelCustomization
+     *             The new value to set.
+     *
+     * @return This instance.
+     */
+    public function withLabelCustomization($value)
+    {
+        $this->setLabelCustomization($value);
         return $this;
     }
 
